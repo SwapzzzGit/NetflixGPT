@@ -1,7 +1,7 @@
-import "./App.css";
+import Body from "./components/Body/Body";
 
 function App() {
-  return <div className="font-semibold text-3xl text-green-500">hi</div>;
+  return <Body />;
 }
 
 export default App;
