@@ -1,4 +1,4 @@
-<img src="./public/favicon.png" alt="Netflix GPT Icon" width="100"> Netflix GPT
+<img src="./public/favicon.png" alt="Netflix GPT Icon" width="24"> Netflix GPT
 
 NetflixGPT is a cool Web Streaming app, ChatGPT enabled.
 
