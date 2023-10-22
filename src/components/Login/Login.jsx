@@ -1,13 +1,18 @@
 import React, { useRef, useState } from "react";
 import Header from "../Header/Header";
-import { createUserWithEmailAndPassword } from "firebase/auth";
+import {
+  createUserWithEmailAndPassword,
+  signInWithEmailAndPassword,
+} from "firebase/auth";
 import { NETFLIX_BANNER } from "../../utils/constants";
 import { checkValidData } from "../../utils/validate";
 import { auth } from "../../utils/firebase";
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
   const [isSignInform, setIsSignInform] = useState(true);
   const [errorMessage, setErrorMessage] = useState(null);
+  const navigate = useNavigate();
 
   const name = useRef(null);
   const email = useRef(null);
@@ -33,6 +38,7 @@ const Login = () => {
           const user = userCredential.user;
           // ...
           console.log(user);
+          navigate("/browse");
         })
         .catch((error) => {
           const errorCode = error.code;
@@ -52,6 +58,7 @@ const Login = () => {
           const user = userCredential.user;
           // ...
           console.log(user);
+          navigate("/browse");
         })
         .catch((error) => {
           const errorCode = error.code;
