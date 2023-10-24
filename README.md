@@ -1,4 +1,9 @@
-<img src="./public/favicon.png" alt="Netflix GPT Icon" width="24"> Netflix GPT
+<table style="border: 1px solid #ccc; border-collapse: collapse;">
+  <tr>
+    <td style="padding: 10px;"><img src="./public/favicon.png" alt="Netflix GPT Icon" width="24"></td>
+    <td style="padding: 10px;">Netflix GPT</td>
+  </tr>
+</table>
 
 NetflixGPT is a cool Web Streaming app, ChatGPT enabled.
 

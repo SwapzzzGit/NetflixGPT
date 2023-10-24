@@ -27,7 +27,7 @@ const Login = () => {
     setErrorMessage(message);
 
     if (!isSignInform) {
-      //Sign up Logic
+      // Sign up Logic
       createUserWithEmailAndPassword(
         auth,
         email.current.value,
@@ -36,18 +36,16 @@ const Login = () => {
         .then((userCredential) => {
           // Signed up
           const user = userCredential.user;
-          // ...
           console.log(user);
           navigate("/browse");
         })
         .catch((error) => {
           const errorCode = error.code;
           const errorMessage = error.message;
-          // ...
           setErrorMessage(errorCode + "-" + errorMessage);
         });
     } else {
-      //Sign In Logic
+      // Sign In Logic
       signInWithEmailAndPassword(
         auth,
         email.current.value,
@@ -56,7 +54,6 @@ const Login = () => {
         .then((userCredential) => {
           // Signed in
           const user = userCredential.user;
-          // ...
           console.log(user);
           navigate("/browse");
         })
@@ -71,7 +68,6 @@ const Login = () => {
   const toggleSignInForm = () => {
     setIsSignInform(!isSignInform);
   };
-
   return (
     <div>
       <Header />
