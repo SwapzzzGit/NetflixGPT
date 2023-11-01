@@ -1,6 +1,8 @@
 /* Header.css */
+
 .arrow-icon {
-  transition: transform 0.3s ease; /* Smooth transition */
+  transition: transform 0.3s ease;
+  /* Smooth transition */
 }
 
 .rotate-180 {
@@ -9,4 +11,21 @@
 
 .rotate-0 {
   transform: rotate(0deg);
+}
+
+.hide {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.2s, opacity 0.2s;
+  transition-delay: 0.3s; /* Delay the transition for 2 seconds */
+}
+
+.dop:hover .hide {
+  visibility: visible;
+  opacity: 1;
+  transition-delay: 0s; /* Remove the delay on hover */
+}
+.dop:hover .arrow-icon {
+  transform: rotate(0deg);
+  transition: transform 0.5s ease;
 }
