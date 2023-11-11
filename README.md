@@ -54,3 +54,6 @@ NetflixGPT is a cool Web Streaming app, ChatGPT enabled.
 - NetflixGPT
   - Search Bar
   - Movie Suggestions
+    17.3 x 9.741 rem movie card
+
+Home, TV Shows, Movies, New & Popular,
