@@ -38,7 +38,7 @@ const Header = () => {
   }, []);
 
   return (
-    <div className=" flex z-30 justify-between items-center bg-gradient-to-b from-black absolute w-[100%] ">
+    <div className=" flex z-30 justify-between items-center bg-gradient-to-b from-black absolute w-[100%]  ">
       <img
         className="w-[250px] h-[100px] px-8 py-2"
         src={NETFLIX_LOGO}

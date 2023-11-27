@@ -42,7 +42,14 @@ export const PROFILE_IMAGES = {
   9: "https://occ-0-3216-2186.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABafGsF7RLiQlTUx1eVpITxBZ5Me8s0M3fvgIbDNpwk1-2dnsNGRdzVOyajfwonpnfF3MKRdPt2l5GejDXr3cbGE8fVV1YWdHhw.png?r=ce4",
   10: "https://occ-0-3216-2186.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABd148B0ZT3d_N6KcgB2_xM2k57VsubEa0FQBp3lj_WPe1m9Zzbgq_KkVdLNfvUmTN5hm7kvTTd0JF9QMxEjW_-TaX5u9vo2QBg.png?r=181",
 };
-export const DATA_URL = "https://api.themoviedb.org/3/movie/now_playing?page=1";
+export const NOW_PLAYING_DATA_URL =
+  "https://api.themoviedb.org/3/movie/now_playing?page=1";
+export const POPULAR_MOVIES_DATA_URL =
+  "https://api.themoviedb.org/3/movie/popular?page=1";
+export const TOP_RATED_MOVIES_DATA_URL =
+  "https://api.themoviedb.org/3/movie/top_rated?page=1";
+export const UPCOMING_MOVIES_DATA_URL =
+  "https://api.themoviedb.org/3/movie/upcoming?page=1";
 
 export const API_OPTIONS = {
   method: "GET",
